@@ -17,11 +17,7 @@ function App() {
     try {
       setErrorMsg("");
       setIsLoading(true);
-      const res = await fetch(`https://api.github.com/users/${query}`, {
-        headers: {
-          authorization: "token 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",
-        },
-      });
+      const res = await fetch(`https://api.github.com/users/${query}`);
 
       if (res.status === 404) throw new Error("⛔ Oops, User not found!");
       if (!res.ok) throw new Error("Error Getting Data!");
