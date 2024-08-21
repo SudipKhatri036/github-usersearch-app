@@ -1,0 +1,61 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-main);
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  color: var(--color-font-main);
+}
+
+.dark .header h1 {
+  color: #ffffff;
+}
+
+.theme-toggle-btn {
+  font-family: var(--font-main);
+  letter-spacing: 2px;
+  line-height: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--color-txt-main);
+  transition: all 0.3s;
+}
+
+.theme-toggle-btn:hover {
+  color: var(--color-font-main);
+}
+
+.dark .theme-toggle-btn {
+  color: #ffffff;
+}
+
+.dark .theme-toggle-btn:hover {
+  color: var(--color-font-togglehovdark);
+}
+
+.theme-toggle-btn span {
+  font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 1300px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .theme-toggle-btn {
+    font-size: 1.5rem;
+  }
+}
