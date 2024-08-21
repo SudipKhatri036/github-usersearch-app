@@ -1,4 +1,4 @@
-function Profile({ name, avatarUrl, createdAt, userName }) {
+function Profile({ name, avatarUrl, createdAt, userName, gitUrl }) {
   return (
     <div className="profile">
       <img
@@ -8,7 +8,7 @@ function Profile({ name, avatarUrl, createdAt, userName }) {
       <div className="intro">
         <div>
           <h2>{name ? name : "The Octocat"}</h2>
-          <a href="#" target="_blank">
+          <a href={gitUrl} target="_blank" rel="noreferrer">
             @{userName ? userName : "Octocat"}
           </a>
         </div>
