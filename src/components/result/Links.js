@@ -20,7 +20,7 @@ function Links({ location, gitUrl, twitter, blog }) {
         <span>
           <AiOutlineLink />
         </span>
-        {blog ? blog : "Not Available"}
+        {blog ? `${blog.substr(0, 24)}...` : "Not Available"}
       </a>
       <a href={gitUrl} target="_blank" rel="noreferrer">
         <span>

@@ -25,6 +25,7 @@ function Result({ userDetails }) {
         avatarUrl={avatarUrl}
         createdAt={createdAt}
         userName={userName}
+        gitUrl={url}
       />
 
       <Bio bio={bio} />
